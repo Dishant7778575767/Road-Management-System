@@ -1,69 +1,112 @@
+# ---------------------------
 # Virtual Environment
+# ---------------------------
 venv/
 .env/
 env/
 ENV/
+.venv/
 
+# ---------------------------
 # Environment variables
+# ---------------------------
 .env
 .env.*
+!.env.example
 
+# ---------------------------
 # Python cache
+# ---------------------------
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
 *.py[cod]
+*$py.class
 
+# ---------------------------
 # Logs
+# ---------------------------
 *.log
+logs/
 
-# Database files
+# ---------------------------
+# Databases
+# ---------------------------
 *.sqlite3
 *.db
 
+# ---------------------------
 # System files
+# ---------------------------
 .DS_Store
 Thumbs.db
 
+# ---------------------------
 # IDE
+# ---------------------------
 .vscode/
 .idea/
+*.swp
 
+# ---------------------------
 # Jupyter
+# ---------------------------
 .ipynb_checkpoints/
 
+# ---------------------------
 # Python build
+# ---------------------------
 build/
 dist/
 *.egg-info/
+.eggs/
 
+# ---------------------------
 # Temporary files
+# ---------------------------
 *.tmp
 *.temp
+.cache/
 
-# ML Models (large files)
-models/*.pt
-models/*.pth
-models/*.onnx
-models/*.h5
+# ---------------------------
+# ML Models (very large)
+# ---------------------------
+models/
+*.pt
+*.pth
+*.onnx
+*.h5
 
-# Dataset files
+# ---------------------------
+# Datasets
+# ---------------------------
 datasets/
 data/
 
-# Generated images/videos
-static/images/
+# ---------------------------
+# Output / Generated files
+# ---------------------------
 outputs/
 runs/
+results/
+static/images/
 
-# Ultralytics cache
-Ultralytics/
+# ---------------------------
+# Ultralytics YOLO
+# ---------------------------
 runs/
+Ultralytics/
 
-# Node modules (if frontend exists)
+# ---------------------------
+# Node (if frontend)
+# ---------------------------
 node_modules/
 
-# Coverage reports
+# ---------------------------
+# Testing / coverage
+# ---------------------------
 .coverage
 htmlcov/
+.pytest_cache/
+
+# ---------------------------
+# OS temporary
+# ---------------------------
